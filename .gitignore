@@ -12,6 +12,4 @@ yarn-error.log*
 *.ntvs*
 *.njsproj
 *.sln
-*.babelrc
-*.editorconfig
-*.postcssrc.js
+package-lock.json
