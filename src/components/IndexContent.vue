@@ -10,10 +10,13 @@
     
         <div class="navs">
           <el-breadcrumb separator="|">
-            <el-breadcrumb-item class="order0"><a href="javascript:void(0)" class="menu">首页</a></el-breadcrumb-item>
-            <el-breadcrumb-item class="order1"><a href="javascript:void(0)" class="menu">发现</a></el-breadcrumb-item>
-            <el-breadcrumb-item class="order2"><a href="javascript:void(0)" class="menu">我们</a></el-breadcrumb-item>
-            <el-breadcrumb-item class="order3"><a href="javascript:void(0)" class="menu">白皮书</a></el-breadcrumb-item>
+            <el-breadcrumb-item class="order0"><a href="javascript:void(0)" class="item">首页</a></el-breadcrumb-item>
+            <span class="line">|</span>
+            <el-breadcrumb-item class="order1"><a href="javascript:void(0)" class="item">发现</a></el-breadcrumb-item>
+            <span class="line">|</span>
+            <el-breadcrumb-item class="order2"><a href="javascript:void(0)" class="item">我们</a></el-breadcrumb-item>
+            <span class="line">|</span>
+            <el-breadcrumb-item class="order3"><a href="javascript:void(0)" class="item">白皮书</a></el-breadcrumb-item>
           </el-breadcrumb>
         </div>
       </el-col>
@@ -96,14 +99,15 @@
   .header .navs .el-breadcrumb{
     display: flex;
   }
-  .header .navs .el-breadcrumb__separator {
-    color: #c0c4cc;
-    position: relative;
-    left: 50%;
-    top: -35px;
-    font-size: 27px;
+  .header .navs .el-breadcrumb {
+    font-size: 0;
+ } 
+  .header .navs .line{
+    border-left: 1.3px solid #c3c3c3;
+    height: 25px;
+    line-height: 102px;
   }
-  .header .navs a.menu{
+  .header .navs a.item{
     font-weight: normal;
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
@@ -113,9 +117,9 @@
     text-align: center;
     font-family: Roboto;
     color: rgba(255, 255, 255, 1);
-    padding:0 30px;
+    padding:0 12px 0 30px;
   }
-  .header .navs a.menu:hover{
+  .header .navs a.item:hover{
     color: #38d1d5;
     cursor: pointer;
   }

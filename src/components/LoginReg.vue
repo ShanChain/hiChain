@@ -5,16 +5,15 @@
        <div class="regs">
           <el-breadcrumb class="cubeReg">
             <el-breadcrumb-item>方车</el-breadcrumb-item>
-            <el-breadcrumb-item>欢迎注册</el-breadcrumb-item>
+            <el-breadcrumb-item class="welcome">欢迎注册</el-breadcrumb-item>
           </el-breadcrumb>
         </div>
     
         <div class="navs">
           <el-breadcrumb separator="|">
-            <el-breadcrumb-item class="order0"><a href="javascript:void(0)" class="menu">首页</a></el-breadcrumb-item>
-            <el-breadcrumb-item class="order1"><a href="javascript:void(0)" class="menu">发现</a></el-breadcrumb-item>
-            <el-breadcrumb-item class="order2"><a href="javascript:void(0)" class="menu">我们</a></el-breadcrumb-item>
-            <el-breadcrumb-item class="order3"><a href="javascript:void(0)" class="menu">白皮书</a></el-breadcrumb-item>
+            <el-breadcrumb-item class="order0"><a href="javascript:void(0)" class="menu login">登录</a></el-breadcrumb-item>
+            <el-breadcrumb-item class="order0">|</el-breadcrumb-item>
+            <el-breadcrumb-item class="order1"><a href="javascript:void(0)" class="menu have">已有账号？</a></el-breadcrumb-item>
           </el-breadcrumb>
         </div>
       </el-col>
@@ -35,6 +34,8 @@
       <el-col :span="12" :offset="6" class="text"><div>Copyright © 2018   All rights reserved  千千世界科技有限公司</div></el-col>
     </el-row>
   </div>
+
+  
 </template>
 
 <script>
@@ -60,23 +61,17 @@
     height:100%;
   }
   .layout .header{
-    height:11%;
-    background-color: rgba(85, 85, 85, 0.76);
+    height:10%;
+    opacity: 0.55;
+    background-color: rgba(33, 153, 193, 1);
   }
   .layout .container{
     height:71%;
-  }
-  .header .menu{
-    display: flex;
-    height:100%;
-    justify-content: space-between;
-    align-items: center;
   }
   .header .regs{
     position: relative;
     width: 19.2%;
     height:100%;
-    background-color: #f00;
   }
   .header .regs .cubeReg{
     display: flex;
@@ -84,11 +79,17 @@
     align-items: center;
     height: 100%;
     padding-left: 14%;
+  }
+  .header .regs .el-breadcrumb__inner {
     color: rgba(255, 255, 255, 1);
     font-size: 36px;
     text-align: left;
     font-family: SourceHanSansSC-regular;
-
+  }
+  .header .regs .welcome .el-breadcrumb__inner{
+    font-size: 17px;
+    position: absolute;
+    bottom: 32%;
   }
    .header .regs .cubeReg .el-breadcrumb__separator{
      font-size: 0;
@@ -99,27 +100,39 @@
     justify-content: flex-end;
     
   }
+  .header .menu{
+    display: flex;
+    height:100%;
+    justify-content: space-between;
+    align-items: center;
+  }
   .header .navs .el-breadcrumb{
     display: flex;
   }
   .header .navs .el-breadcrumb__separator {
-    color: #c0c4cc;
-    position: relative;
-    left: 50%;
-    top: -35px;
-    font-size: 27px;
+    font-size: 0;
   }
-  .header .navs a.menu{
+  .header .navs a.login{
     font-weight: normal;
-    color: rgba(255, 255, 255, 1);
     cursor: pointer;
     border: none;
     box-sizing: border-box;
+    padding: 0 30px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 36px;
+    text-align: center;
+    font-family: Roboto;
+  }
+  .header .navs a.have{
+    font-weight: normal;
+    cursor: pointer;
+    border: none;
+    box-sizing: border-box;
+    padding: 0 47px 0 20px;
+    color: rgba(255, 255, 255, 1);
     font-size: 20px;
     text-align: center;
     font-family: Roboto;
-    color: rgba(255, 255, 255, 1);
-    padding:0 30px;
   }
   .header .navs a.menu:hover{
     color: #38d1d5;
@@ -129,7 +142,6 @@
 
  .layout .footer{
     height:18%;
-    background-color: #ffffff3b;
   }
 .layout .footer .aboutInfo{
     height:50%;
