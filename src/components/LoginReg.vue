@@ -11,15 +11,17 @@
     
         <div class="navs">
           <el-breadcrumb separator="|">
-            <el-breadcrumb-item class="order0"><a href="javascript:void(0)" class="menu login">登录</a></el-breadcrumb-item>
-            <el-breadcrumb-item class="order0">|</el-breadcrumb-item>
-            <el-breadcrumb-item class="order1"><a href="javascript:void(0)" class="menu have">已有账号？</a></el-breadcrumb-item>
+            <el-breadcrumb-item class="order0"><a href="javascript:void(0)" class="item login">登录</a></el-breadcrumb-item>
+            <span class="line">|</span>
+            <el-breadcrumb-item class="order1"><a href="javascript:void(0)" class="item have">已有账号？</a></el-breadcrumb-item>
           </el-breadcrumb>
         </div>
       </el-col>
     </el-row>
     <el-row class="container">
-      <slot></slot>
+      <div class="main">
+        <slot></slot>
+      </div>
     </el-row>
     <el-row class="footer">
       <el-col :span="24" class="aboutInfo">
@@ -112,33 +114,61 @@
   .header .navs .el-breadcrumb__separator {
     font-size: 0;
   }
+   .header .navs .line{
+    border-left: 1.3px solid #c3c3c3;
+    height: 35px;
+    line-height: 102px;
+    font-size: 0;
+  }
+ 
   .header .navs a.login{
     font-weight: normal;
     cursor: pointer;
     border: none;
     box-sizing: border-box;
-    padding: 0 30px;
     color: rgba(255, 255, 255, 1);
     font-size: 36px;
     text-align: center;
     font-family: Roboto;
+    padding-right: 10px;
+    letter-spacing: 0;
   }
   .header .navs a.have{
     font-weight: normal;
     cursor: pointer;
     border: none;
     box-sizing: border-box;
-    padding: 0 47px 0 20px;
+    padding: 0 49px 0 20px;
     color: rgba(255, 255, 255, 1);
     font-size: 20px;
     text-align: center;
     font-family: Roboto;
+    line-height: 35px;
   }
   .header .navs a.menu:hover{
     color: #38d1d5;
     cursor: pointer;
   }
 
+  .layout .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .layout .container .main{
+    width: 1130px;
+    height: 600px;
+    line-height: 20px;
+    opacity: 0.85;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(16, 16, 16, 1);
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0px 0px 20px 7px rgba(85, 85, 85, 1);
+    font-family: Roboto;
+    border: 1px solid rgba(255, 255, 255, 0);
+  }
 
  .layout .footer{
     height:18%;
