@@ -8,9 +8,7 @@ import Video from '@/views/Video'
 import AboutUs from '@/views/AboutUs'
 import ContactUs from '@/views/ContactUs'
 import JoinUs from '@/views/JoinUs'
-import LoginReg from '@/components/LoginReg'
-import Tab from '@/components/Tab'
-import IndexContent from '@/components/IndexContent'
+import Register from '@/views/Register'
 Vue.use(Router)
 
 
@@ -58,19 +56,11 @@ export default new Router({
       component: JoinUs
     },
     {
-      path: '/loginreg',
-      name: 'LoginReg',
-      component: LoginReg
+      path: '/register',
+      name: 'Register',
+      component: Register
     },
-    {
-      path: '/tab',
-      name: 'Tab',
-      component: Tab
-    },
-    {
-      path: '/indexContent',
-      name: 'IndexContent',
-      component: IndexContent
-    },
+    
+    
   ]
 })
