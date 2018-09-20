@@ -16,14 +16,13 @@
             <span class="line">|</span>
             <el-breadcrumb-item class="order2"><a href="javascript:void(0)" class="item">我们</a></el-breadcrumb-item>
             <span class="line">|</span>
-            <el-breadcrumb-item class="order3"><a href="javascript:void(0)" class="item">白皮书</a></el-breadcrumb-item>
+            <el-breadcrumb-item class="order3"><a href="javascript:void(0)" class="item itemRight">白皮书</a></el-breadcrumb-item>
           </el-breadcrumb>
         </div>
       </el-col>
     </el-row>
     <el-row class="container">
       <slot></slot>
-      
     </el-row>
     <el-row class="footer">
       <el-col :span="24" class="aboutInfo">
@@ -119,6 +118,9 @@
     font-family: Roboto;
     color: rgba(255, 255, 255, 1);
     padding:0 12px 0 30px;
+  }
+  .header .navs a.itemRight{
+    padding-right: 30px;
   }
   .header .navs a.item:hover{
     color: #38d1d5;
