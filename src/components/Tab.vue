@@ -17,19 +17,19 @@
       <el-tab-pane label="K"><el-button class="zone" v-for="itemK in K" :key="itemK" @click="select(itemK)">{{itemK}}</el-button></el-tab-pane>
       <el-tab-pane label="L"><el-button class="zone" v-for="itemL in L" :key="itemL" @click="select(itemL)">{{itemL}}</el-button></el-tab-pane>
       <el-tab-pane label="M"><el-button class="zone" v-for="itemM in M" :key="itemM" @click="select(itemM)">{{itemM}}</el-button></el-tab-pane>
-      <el-tab-pane label="M"><el-button class="zone" v-for="itemN in N" :key="itemN" @click="select(itemN)">{{itemN}}</el-button></el-tab-pane>
-      <el-tab-pane label="N"><el-button class="zone" v-for="itemO in O" :key="itemO" @click="select(itemO)">{{itemO}}</el-button></el-tab-pane>
-      <el-tab-pane label="O"><el-button class="zone" v-for="itemP in P" :key="itemP" @click="select(itemP)">{{itemP}}</el-button></el-tab-pane>
-      <el-tab-pane label="P"><el-button class="zone" v-for="itemQ in Q" :key="itemQ" @click="select(itemQ)">{{itemQ}}</el-button></el-tab-pane>
-      <el-tab-pane label="Q"><el-button class="zone" v-for="itemR in R" :key="itemR" @click="select(itemR)">{{itemR}}</el-button></el-tab-pane>
-      <el-tab-pane label="R"><el-button class="zone" v-for="itemS in S" :key="itemS" @click="select(itemS)">{{itemS}}</el-button></el-tab-pane>
-      <el-tab-pane label="S"><el-button class="zone" v-for="itemT in T" :key="itemT" @click="select(itemT)">{{itemT}}</el-button></el-tab-pane>
-      <el-tab-pane label="T"><el-button class="zone" v-for="itemU in U" :key="itemU" @click="select(itemU)">{{itemU}}</el-button></el-tab-pane>
-      <el-tab-pane label="U"><el-button class="zone" v-for="itemV in V" :key="itemV" @click="select(itemV)">{{itemV}}</el-button></el-tab-pane>
-      <el-tab-pane label="V"><el-button class="zone" v-for="itemW in W" :key="itemW" @click="select(itemW)">{{itemW}}</el-button></el-tab-pane>
-      <el-tab-pane label="W"><el-button class="zone" v-for="itemX in X" :key="itemX" @click="select(itemX)">{{itemX}}</el-button></el-tab-pane>
-      <el-tab-pane label="X"><el-button class="zone" v-for="itemY in Y" :key="itemY" @click="select(itemY)">{{itemY}}</el-button></el-tab-pane>
-      <el-tab-pane label="Y"><el-button class="zone" v-for="itemZ in Z" :key="itemZ" @click="select(itemZ)">{{itemZ}}</el-button></el-tab-pane>
+      <el-tab-pane label="N"><el-button class="zone" v-for="itemN in N" :key="itemN" @click="select(itemN)">{{itemN}}</el-button></el-tab-pane>
+      <el-tab-pane label="O"><el-button class="zone" v-for="itemO in O" :key="itemO" @click="select(itemO)">{{itemO}}</el-button></el-tab-pane>
+      <el-tab-pane label="P"><el-button class="zone" v-for="itemP in P" :key="itemP" @click="select(itemP)">{{itemP}}</el-button></el-tab-pane>
+      <el-tab-pane label="Q"><el-button class="zone" v-for="itemQ in Q" :key="itemQ" @click="select(itemQ)">{{itemQ}}</el-button></el-tab-pane>
+      <el-tab-pane label="R"><el-button class="zone" v-for="itemR in R" :key="itemR" @click="select(itemR)">{{itemR}}</el-button></el-tab-pane>
+      <el-tab-pane label="S"><el-button class="zone" v-for="itemS in S" :key="itemS" @click="select(itemS)">{{itemS}}</el-button></el-tab-pane>
+      <el-tab-pane label="T"><el-button class="zone" v-for="itemT in T" :key="itemT" @click="select(itemT)">{{itemT}}</el-button></el-tab-pane>
+      <el-tab-pane label="U"><el-button class="zone" v-for="itemU in U" :key="itemU" @click="select(itemU)">{{itemU}}</el-button></el-tab-pane>
+      <el-tab-pane label="V"><el-button class="zone" v-for="itemV in V" :key="itemV" @click="select(itemV)">{{itemV}}</el-button></el-tab-pane>
+      <el-tab-pane label="W"><el-button class="zone" v-for="itemW in W" :key="itemW" @click="select(itemW)">{{itemW}}</el-button></el-tab-pane>
+      <el-tab-pane label="X"><el-button class="zone" v-for="itemX in X" :key="itemX" @click="select(itemX)">{{itemX}}</el-button></el-tab-pane>
+      <el-tab-pane label="Y"><el-button class="zone" v-for="itemY in Y" :key="itemY" @click="select(itemY)">{{itemY}}</el-button></el-tab-pane>
+      <el-tab-pane label="Z"><el-button class="zone" v-for="itemZ in Z" :key="itemZ" @click="select(itemZ)">{{itemZ}}</el-button></el-tab-pane>
 
     </el-tabs>
 
@@ -131,6 +131,7 @@ export default {
   }
   .tab .el-tabs__item:hover {
     color: rgba(56, 194, 255, 1);
+    font-weight: bold;
     border-bottom: 2px solid rgba(56, 194, 255, 1);
   }
   .tab .el-button {

@@ -130,7 +130,6 @@
 
  .layout .footer{
     height:18%;
-    background-color: #ffffff3b;
   }
 .layout .footer .aboutInfo{
     height:50%;
