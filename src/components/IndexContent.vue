@@ -23,6 +23,7 @@
     </el-row>
     <el-row class="container">
       <slot></slot>
+      
     </el-row>
     <el-row class="footer">
       <el-col :span="24" class="aboutInfo">
